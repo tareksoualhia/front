@@ -19,7 +19,7 @@ export class ProductsComponent implements OnInit {
       next: (data: any) => {
         this.products = data.map((p: any) => {
   if (p.image && !p.image.startsWith('http')) {
-    p.image = `http://127.0.0.1:8000${p.image}`;
+    p.image = `https://tarek-zryb.onrender.com${p.image}`;
   }
   return p;
 });
